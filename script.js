@@ -130,6 +130,6 @@ function savePDF() {
         }
     }
 
-    doc.save('clubes_de_futebol.pdf');
+    doc.save('clubes.pdf');
 }
 
