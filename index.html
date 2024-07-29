@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Clubes de Futebol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gerenciamento de Clubes de Futebol</h1>
+
+    <!-- Formulário para adicionar técnicos e clubes -->
+    <div>
+        <h2>Adicionar Técnico e Clube</h2>
+        <label for="techName">Nome do Técnico:</label>
+        <input type="text" id="techName">
+        <label for="clubName">Nome do Clube:</label>
+        <input type="text" id="clubName">
+        <button onclick="addTech()">Adicionar Técnico e Clube</button>
+    </div>
+
+    <!-- Formulário para adicionar jogadores -->
+    <div>
+        <h2>Adicionar Jogador</h2>
+        <label for="clubSelect">Escolha o Clube:</label>
+        <select id="clubSelect"></select>
+        <br>
+        <label for="playerName">Nome do Jogador:</label>
+        <input type="text" id="playerName">
+        <label for="playerNumber">Número da Camisa:</label>
+        <input type="number" id="playerNumber">
+        <label for="playerPosition">Posição:</label>
+        <input type="text" id="playerPosition">
+        <label for="favoritePlayer">Favorito:</label>
+        <input type="checkbox" id="favoritePlayer">
+        <button onclick="addPlayer()">Adicionar Jogador</button>
+    </div>
+
+    <!-- Área para visualizar clubes -->
+    <div>
+        <h2>Visualizar Clubes</h2>
+        <button onclick="viewClubs()">Visualizar Clubes</button>
+        <div id="clubList" style="display:none;"></div>
+    </div>
+
+    <!-- Botão para salvar em PDF -->
+    <div>
+        <button onclick="savePDF()">Salvar em PDF</button>
+    </div>
+
+    <!-- Inclusão do arquivo jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- Inclusão do arquivo JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
+
